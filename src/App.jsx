@@ -41,16 +41,19 @@ function App() {
           </div>
         )}
       </div>
-      <button
-        onClick={() => {
-          auth.signOut();
-          setUser(null);
-          setSelectedUser(null);
-        }}
-        className="absolute top-4 right-4 bg-red-500 text-white px-4 py-2 rounded"
-      >
-        Logout
-      </button>
+      <div className="flex items-center justify-center ">
+  <button
+    onClick={() => {
+      auth.signOut();
+      setUser(null);
+      setSelectedUser(null);
+    }}
+    className="absolute -bottom-1/12 left-1/2 right-1/3 transform -translate-x-1/2 bg-red-500 text-white px-4 py-2 rounded"
+  >
+    Logout
+  </button>
+</div>
+
 
     </div>
   );
